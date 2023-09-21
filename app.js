@@ -17,6 +17,17 @@ app.get('/meunome', (req, res) => {
   res.send('Meu nome é André Henrique Domingos da Silva!')
 })
 
+app.get('/tico', (req, res) => {
+  console.log("Just got a request!")
+  res.send('Teco')
+})
+
+app.get('/pokemons', (req, res) => {
+  var pokemons = ["Pikachu", "Caterpie", "pdgooto"]
+  console.log("Just got a request!")
+  return res.json('lista.json')
+})
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
