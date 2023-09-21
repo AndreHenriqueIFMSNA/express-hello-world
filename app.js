@@ -23,7 +23,7 @@ app.get('/tico', (req, res) => {
 })
 
 app.get('/pokemons', (req, res) => {
-  var pokemons = ["Pikachu", "Caterpie", "pdgooto"]
+  var pokemons = ["Pikachu", "Caterpie", "Tapu Koko", "Landorus", "Groudon", "Lunala", "Xerneas", "Mewtwo", "Rayquaza", "Zacian"]
   console.log("Just got a request!")
   return res.json(pokemons)
 })
